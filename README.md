@@ -5,7 +5,7 @@
     
 =======
 # Face-Recognition
->>>>>>> 61e7587 (Initial commit)
+
 
 aaaaa
 =======
@@ -19,4 +19,4 @@ install CUDA
 API:
     datetime
     
->>>>>>> 98180a2 (readme)
+

@@ -1,7 +1,9 @@
 # Face-Recognition demo
 
-##環境配置
-python version 3.8.10
+##enviroment
+| python | 3.8.10 |
+|face
+
 
 install CUDA
 

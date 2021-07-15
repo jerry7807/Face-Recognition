@@ -11,7 +11,7 @@ imgPath = './image'
 images = []
 classes = []
 List = os.listdir(imgPath)
-total_frames = 0
+
 
 #讀取圖片,添加類別
 for name in List:
@@ -28,7 +28,7 @@ def findEncodings(images):
         encodeList.append(encode)
     return encodeList
 #計算fps
-def calcFps(total_frames):
+def calcFps():
     end_time = time.time()
     time_diff = end_time - start_time
 
@@ -73,12 +73,11 @@ while True:
             y1,x2,y2,x1 = faceLoc
             cv2.rectangle(frame,(x1,y1),(x2,y2),(0,255,0),2)
             cv2.rectangle(frame,(x1,y2+20),(x2,y2),(0,255,0),cv2.FILLED)
-            cv2.putText(frame,name,(x1+15,y2+15),cv2.FONT_HERSHEY_coMPLEX,0.5,(255,255,255),2)
+            cv2.putText(frame,name,(x1+15,y2+15),cv2.FONT_HERSHEY_DUPLEX,0.5,(255,255,255),2)
             record(name)
 
-    total_frames += 1
-    fps_text = calcFps(total_frames)
-    cv2.putText(frame,fps_text,(50,50),cv2.FONT_HERSHEY_COMPLEX,1,(0,0,255),1)
+    fps_text = calcFps()
+    cv2.putText(frame,fps_text,(50,50),cv2.FONT_HERSHEY_DUPLEX,1,(0,0,255),1)
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
     cv2.imshow('frame',frame)

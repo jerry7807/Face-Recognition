@@ -11,10 +11,4 @@
 * 
 * GPU :  NVIDIA GeForce GTX 1060
 
-notice: 代碼中使用CUDA/GPU提升效能，需先安裝dlib(這邊用的是19.22.0),之後安裝 CUDA(v11.4),
-執行後於terminal輸入nvidia-smi確認GPU是否正常運作
-
-    
-
-
-
+notice: 安裝face recognition時會自動安裝dilb，建議先行安裝避失敗(需先安裝cmake、boost)   

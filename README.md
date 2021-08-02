@@ -7,10 +7,10 @@
 
 * API
 
-** face recognition 1.3.0  
-** opencv-python 4.5.2.54
-** numpy 1.21.0
-** dlib 19.22.0
+ * face recognition 1.3.0  
+ * opencv-python 4.5.2.54
+ * numpy 1.21.0
+ * dlib 19.22.0
 
 
 * GPU :  NVIDIA GeForce GTX 1060

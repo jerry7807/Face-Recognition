@@ -5,7 +5,7 @@
 * python 3.8.10
 * CUDA 11.4
 
-* API
+### API
 
  * face recognition 1.3.0  
  * opencv-python 4.5.2.54
